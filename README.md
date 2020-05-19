@@ -1,6 +1,6 @@
 
 # Motivation 
-Built this application to further develop my JS skills, it is not intended for production use. Building a Data Store from scratch was an exercise in expanding my knowledge in Classes and Inheritance with OOP. I  have also developed some good examples of code re-use. 
+Built this application to further develop my JS skills, it is not intended for production use. Building a Data Store from scratch was an exercise in expanding my knowledge in Classes and Inheritance with OOP. I  have also developed some good examples of code that is available for re-use on other projects. 
 
 
 # Known Issues

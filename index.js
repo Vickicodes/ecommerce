@@ -3,8 +3,11 @@ require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const cookieSession = require('cookie-session');
+const methodOverride = require('method-override');
+
 const authRouter = require('./routes/admin/auth');
-const productsRouter = require('./routes/admin/products');
+const adminProductsRouter = require('./routes/admin/products');
+const landingRouter = require('./routes/landing');
 
 const app = express();
 
@@ -15,8 +18,11 @@ app.use(
 		keys: [ process.env.COOKIE_KEY ]
 	})
 );
+app.use(methodOverride('_method'));
+
 app.use(authRouter);
-app.use(productsRouter);
+app.use(adminProductsRouter);
+app.use(landingRouter);
 
 app.listen(3000, () => {
 	console.log('app listening on port 3000');

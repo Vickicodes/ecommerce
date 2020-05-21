@@ -8,6 +8,7 @@ const methodOverride = require('method-override');
 const authRouter = require('./routes/admin/auth');
 const adminProductsRouter = require('./routes/admin/products');
 const landingRouter = require('./routes/landing');
+const cartsRouter = require('./routes/carts');
 
 const app = express();
 
@@ -23,6 +24,7 @@ app.use(methodOverride('_method'));
 app.use(authRouter);
 app.use(adminProductsRouter);
 app.use(landingRouter);
+app.use(cartsRouter);
 
 app.listen(3000, () => {
 	console.log('app listening on port 3000');

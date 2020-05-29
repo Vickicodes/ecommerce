@@ -1,5 +1,5 @@
 # e-commerce
-
+A node based web server that allows public users to view and add items to a cart, and an admin user can add new, edit and delete items. 
 
 # Motivation 
 I built this application to further develop my JS skills and gain knowledge that can be easily transferred onto other projects, it is not intended for production use. Building a Data Store from scratch was an exercise in expanding my knowledge in Classes and Inheritance with OOP. I have also gained a further understanding of User Authentication and have also developed some good examples of code that is available for re-use on other projects. In this exercise I also learnt about cookies and how to store information inside them. 
